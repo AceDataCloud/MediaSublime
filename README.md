@@ -1,3 +1,5 @@
+<img src="artwork/ace-media-tasks.png" alt="AceMediaTasks" width="80" height="80">
+
 # AceMediaTasks
 
 Insert an existing media task's output into a Markdown document in Sublime Text. The command replaces your selected task ID, or inserts at the caret. Images use Markdown image syntax. Audio and video use links. A task with several results lets you choose which asset to use.
