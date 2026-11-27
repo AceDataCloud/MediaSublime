@@ -9,7 +9,7 @@ Insert an existing media task's output into a Markdown document in Sublime Text.
 ## Use the command
 
 1. Install **AceMediaTasks** with Package Control when available, or choose **Preferences → Browse Packages** and clone this repository as `AceMediaTasks` inside the `Packages` directory for a manual installation.
-2. Open **Preferences: Ace Media Tasks Settings** from the Command Palette. Add only the services you use to your personal settings. For example:
+2. Open **Preferences: AceMediaTasks Settings** from the Command Palette. Add only the services you use to your personal settings. For example:
 
    ```json
    {

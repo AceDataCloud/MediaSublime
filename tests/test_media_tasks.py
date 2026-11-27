@@ -3,7 +3,7 @@ from io import BytesIO
 import unittest
 from unittest.mock import patch
 
-import media_tasks
+from lib import media_tasks
 
 
 class TaskResults(unittest.TestCase):
@@ -32,7 +32,7 @@ class TaskResults(unittest.TestCase):
     def test_retrieve_request_stays_on_service(self):
         class Response(BytesIO):
             status = 200
-        with patch('media_tasks.http.client.HTTPSConnection') as connect:
+        with patch('lib.media_tasks.http.client.HTTPSConnection') as connect:
             client = connect.return_value
             client.getresponse.return_value = Response(b'{"id":"owned"}')
             self.assertEqual(media_tasks.retrieve('suno', 'owned', 'fixture'), {'id': 'owned'})
