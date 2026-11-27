@@ -1,0 +1,5 @@
+[
+    {"caption": "Ace Media Tasks: Insert Result as Markdown", "command": "ace_media_insert_task"},
+    {"caption": "Ace Media Tasks: Open Service Applications", "command": "ace_media_open_applications"},
+    {"caption": "Preferences: Ace Media Tasks Settings", "command": "edit_settings", "args": {"base_file": "${packages}/AceMediaTasks/AceMediaTasks.sublime-settings", "default": "{\n\t\"service_tokens\": {}\n}\n"}}
+]
