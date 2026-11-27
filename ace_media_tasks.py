@@ -6,7 +6,7 @@ import webbrowser
 import sublime
 import sublime_plugin
 
-from . import media_tasks
+from .lib import media_tasks
 
 
 SETTINGS = 'AceMediaTasks.sublime-settings'
@@ -68,7 +68,7 @@ class AceMediaInsertTaskCommand(sublime_plugin.TextCommand):
             return
         token = credentials.get(service) or os.environ.get('ACEDATACLOUD_API_TOKEN')
         if not isinstance(token, str) or not token.strip():
-            sublime.error_message('Ace Media Tasks: configure a token for {} in Preferences → Package Settings → Ace Media Tasks.'.format(media_tasks.SERVICES[service][0]))
+            sublime.error_message('Ace Media Tasks: configure a token for {} in Preferences → Package Settings → AceMediaTasks.'.format(media_tasks.SERVICES[service][0]))
             return
         if any(char in token.strip() for char in '\r\n'):
             sublime.error_message('Ace Media Tasks: the token must be a single line.')

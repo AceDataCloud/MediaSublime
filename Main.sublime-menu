@@ -1,7 +1,7 @@
 [
     {"caption": "Preferences", "id": "preferences", "children": [
         {"caption": "Package Settings", "id": "package-settings", "children": [
-            {"caption": "Ace Media Tasks", "children": [
+            {"caption": "AceMediaTasks", "children": [
                 {"caption": "Settings", "command": "edit_settings", "args": {"base_file": "${packages}/AceMediaTasks/AceMediaTasks.sublime-settings", "default": "{\n\t\"service_tokens\": {}\n}\n"}}
             ]}
         ]}
